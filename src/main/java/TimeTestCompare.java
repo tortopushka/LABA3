@@ -1,18 +1,39 @@
 import java.util.List;
-
+/**
+ * this class is comparing time
+ */
 public class TimeTestCompare {
-
+    /**
+     * This field is needed for test1
+     */
     TimeTest t1;
+    /**
+     * This field is needed for test2
+     */
     TimeTest t2;
+    /**
+     * This field is count of iterations
+     */
     int n;
 
+    /**
+     * constructor
+     * @param linkedList list for compare
+     * @param arrayList list for compare
+     * @param n count of iterations
+     */
     TimeTestCompare(List<Integer> linkedList, List<Integer>  arrayList, int n){
         t1=new TimeTest(linkedList);
         t2=new TimeTest(arrayList);
         this.n=n;
     }
 
-    public String Compare(){
+    /**
+     * this method return result of compare in string
+     * @return string
+     */
+    @Override
+    public String toString(){
         String str="";
 
         str+="------------------ ADDING ------------------"+System.lineSeparator();
